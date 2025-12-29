@@ -1,0 +1,293 @@
+-z relro
+--hash-style gnu
+--build-id=sha1
+--eh-frame-hdr
+-m elf_x86_64
+-export-dynamic
+-pie
+-dynamic-linker /lib64/ld-linux-x86-64.so.2
+-o oolite
+lib/x86_64-linux-gnu/Scrt1.o
+lib/x86_64-linux-gnu/crti.o
+usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o
+-L /home/mcarans/GNUstep/Library/Libraries
+-L usr/local/lib
+-L home/mcarans/Code/OoliteRelated/oolite_mcarans/deps/Linux-deps/x86_64/mozilla
+-L usr/lib/x86_64-linux-gnu
+-L usr/lib/gcc/x86_64-linux-gnu/15
+-L usr/lib64
+-L lib/x86_64-linux-gnu
+-L lib64
+-L usr/lib/x86_64-linux-gnu
+-L usr/lib64
+-L lib
+-L usr/lib
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/legacy_random.c.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/strlcpy.c.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTCPStreamDecoder.c.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPlanetData.c.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/ioapi.c.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/unzip.c.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODebugMonitor.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODebugStandards.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODebugSupport.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODebugTCPConsoleClient.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSConsole.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOProfilingStopwatch.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTCPStreamDecoderAbstractionLayer.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/DockEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/DustEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/Entity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOEntityWithDrawable.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOParticleSystem.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlanetEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityContracts.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityControls.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityLegacyScriptEngine.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityLoadSave.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityScriptMethods.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntitySound.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityStickMapper.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityStickProfile.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/PlayerEntityKeyMapper.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/ProxyPlayerEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOBreakPatternEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/ShipEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/ShipEntityAI.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/ShipEntityScriptMethods.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/SkyEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/StationEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSunEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/WormholeEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOLightParticleEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOFlasherEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOExhaustPlumeEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSparkEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOECMBlastEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPlanetEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPlasmaShotEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPlasmaBurstEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOFlashEffectEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOExplosionCloudEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/ShipEntityLoadRestore.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOLaserShotEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOQuiriumCascadeEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OORingEffectEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOVisualEffectEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOWaypointEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODrawable.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPlanetDrawable.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMesh.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMaterialSpecifier.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOBasicMaterial.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODefaultShaderSynthesizer.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMaterial.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OONullTexture.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPlanetTextureGenerator.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOStandaloneAtmosphereGenerator.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPNGTextureLoader.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOShaderMaterial.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOShaderProgram.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOShaderUniform.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOShaderUniformMethodType.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSingleTextureMaterial.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTexture.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOConcreteTexture.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTextureGenerator.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTextureLoader.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPixMap.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTextureScaling.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPixMapChannelOperations.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMultiTextureMaterial.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMaterialConvenienceCreators.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCombinedEmissionMapGenerator.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPixMapTextureLoader.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCrosshairs.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODebugGLDrawing.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOGraphicsResetManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOpenGL.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOpenGLStateManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOpenGLExtensionManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOpenGLMatrixManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOProbabilisticTextureManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSkyDrawable.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTextureSprite.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPolygonSprite.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOConvertCubeMapToLatLong.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/CollisionRegion.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMeshToOctreeConverter.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/Octree.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOHPVector.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMatrix.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOQuaternion.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOVector.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOVoxel.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOAIStateMachineVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCheckDemoShipsPListVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCheckEquipmentPListVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCheckJSSyntaxVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCheckPListSyntaxVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCheckRequiresPListVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCheckShipDataPListVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOFileScannerVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOModelVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOXPVerifier.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOXPVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPListSchemaVerifier.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTextureVerifierStage.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OldSchoolPropertyListWriting.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCache.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCacheManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOConvertSystemDescriptions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOXZManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPListParsing.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSystemDescriptionManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/ResourceManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/TextureStore.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/EntityOOJavaScriptExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJavaScriptEngine.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSEngineTimeManagement.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSEngineDebuggerHelpers.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOConstToJSString.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSCall.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSClock.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSDock.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSEntity.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSEquipmentInfo.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSExhaustPlume.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSFlasher.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSFunction.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSGlobal.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSInterfaceDefinition.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSGuiScreenKeyDefinition.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSManifest.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSMission.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSMissionVariables.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSOolite.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSPlanet.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSPlayer.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSPlayerShip.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSPopulatorDefinition.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSQuaternion.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSScript.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSShip.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSShipGroup.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSSound.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSSoundSource.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSSpecialFunctions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSStation.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSSun.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSSystem.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSSystemInfo.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSTimer.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSVisualEffect.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSVector.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSWorldScripts.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSWormhole.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSWaypoint.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOLegacyScriptWhitelist.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPListScript.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOScript.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOScriptTimer.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSFrameCallbacks.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJSFont.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOOpenALController.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMusicController.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSoundSource.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSoundSourcePool.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOALMusic.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOALSound.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOALSoundChannel.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOALSoundMixer.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOALSoundDecoder.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOALBufferedSound.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOALStreamedSound.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/GuiDisplayGen.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/HeadUpDisplay.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOEncodingConverter.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/Comparison.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSDataOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSDictionaryOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSFileManagerOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSMutableDictionaryOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSScannerOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSStringOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSThreadOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSNumberOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOAsyncQueue.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOAsyncWorkManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCollectionExtractors.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOColor.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOConstToString.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCPUInfo.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOEntityFilterPredicate.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOExcludeObjectEnumerator.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOFilteringEnumerator.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOIsNumberLiteral.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOLogging.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOLogHeader.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOLogOutputHandler.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOPriorityQueue.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOProbabilitySet.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOShipGroup.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOStringExpander.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOStringParsing.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOWeakReference.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOWeakSet.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOXMLExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OODeepCopy.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OORegExpMatcher.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSObjectOOExtensions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/AI.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/AIGraphViz.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/GameController.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/GameController+SDLFullScreen.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/NSUserDefaults+Override.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJoystickManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOJoystickProfile.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSDLJoystickManager.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/main.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/MyOpenGLView.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCharacter.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCocoa.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCommodities.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOCommodityMarket.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOEquipmentType.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOMouseInteractionMode.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OORoleSet.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOShipLibraryDescriptions.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOShipRegistry.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSpatialReference.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOTrumble.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/Universe.m.o
+home/mcarans/Code/OoliteRelated/oolite_mcarans/obj.spk/oolite.obj/OOSaveEXRSnapshot.cpp.o
+-l GLU
+-l GL
+-l X11
+-l SDL
+-l gnustep-base
+-l js_static
+-l openal
+-l z
+-l vorbisfile
+-l png
+-l plds4
+-l plc4
+-l nspr4
+-l pthread
+-l dl
+-l stdc++
+-l espeak-ng
+-l objc
+-l m
+-l stdc++
+-l m
+-l gcc_s
+-l gcc
+-l pthread
+-l c
+-l gcc_s
+-l gcc
+usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o
+lib/x86_64-linux-gnu/crtn.o
