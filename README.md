@@ -7,7 +7,7 @@ ld.bfd @response.txt
 mold @response.txt
 ```
 
-This one gives a Segmentation fault:
+This one produces a binary that gives a Segmentation fault:
 
 ```
 ld.lld @response.txt
